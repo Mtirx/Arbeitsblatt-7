@@ -46,8 +46,7 @@ function addLocationToTable(location, weatherData) {
         <td>${weatherData.temp_max}°C</td>
         <td><span class="trash-icon" style="color: red; cursor: pointer;">🗑️</span></td>
     `;
-
-    // Add event listener for the trash icon
+    
     row.querySelector('.trash-icon').addEventListener('click', () => {
         removeLocation(row);
     });
